@@ -1,0 +1,15 @@
+# Visit https://prettier.io/docs/en/index.html to read more about this file
+
+
+# woork environment
+.vscode
+.idea
+
+# compiled files
+dist
+
+# node modules
+node_modules
+
+# dependencies
+package-lock.json

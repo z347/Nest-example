@@ -1,0 +1,17 @@
+# Visit https://editorconfig.org to read more about this file
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+max_line_length = 120
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{ts, js, json}]
+trim_trailing_whitespace = true

@@ -1,0 +1,31 @@
+{
+  // Visit https://eslint.org/docs/user-guide/configuring to read more about this file
+
+  "root": true,
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "codeFrame": true,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "@typescript-eslint/indent": "off",
+    "import/prefer-default-export": "off",
+    "no-return-await": "off", // in production mode - maybe better delete and refactore code, but need test it's
+    "no-underscore-dangle": "off"
+  }
+}
